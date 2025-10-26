@@ -1,54 +1,36 @@
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f5d0fe;
-}
+<!DOCTYPE html>
+<html>
 
-.content-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 7px;
-}
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
 
-input-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="p-4 col-12 second-container">
+                <h1 class="heading">Library Management</h1>
+                <input id="searchInput" class="w-90" type="search" placeholder="Type book title">
+            </div>
+            <div class="col-12">
+                <div class="mt-3 text-center">
+                    <div id="spinner" class="d-none spinner-border text-dark" role="status">
+                        <span class="sr-only">Loading....</span>
 
-}
+                    </div>
+                    <p id="message"></p>
 
-.input {
-    width: 100%;
-    padding: 7px;
-    border: 1px solid #cbd2d9;
-}
+                </div>
+            </div>
+            <div id="searchResults" class="col-12">
 
-.button{
-    background-color: #d946ef;
-    color: #ffffff;
-    padding-top: 7px;
-    border: none;
-    outline: none;
-    padding-left: 9px;
-    padding-right: 9px;
-    border-radius: 4px;
-}
+            </div>
 
-.para-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
+        </div>
+    </div>
+</body>
 
-.para {
-    margin-right: 50px;
-
-}
+</html>
